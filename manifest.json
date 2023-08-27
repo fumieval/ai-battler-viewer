@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "AIバトラービューア",
+  "version": "1.0",
+  "description": "AIバトラーの対戦ログを一括で見るぞおお！",
+  "content_security_policy": "default-src 'self'; connect-src https://ai-battle.alphabrend.com/; script-src 'self' 'unsafe-eval' https://unpkg.com/;",
+  "icons": {
+    "48": "gotsuo.png"
+  },
+  "permissions": [
+      "activeTab",
+      "contextualIdentities",
+      "cookies",
+      "storage",
+      "webNavigation",
+      "webRequest",
+      "webRequestBlocking",
+      "*://*/*"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "32": "gotsuo.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "author": "fumieval",
+  "homepage_url": "https://github.com/fumieval/ai-battler-viewer"
+}
